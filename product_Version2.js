@@ -1,19 +1,19 @@
 // Array of product objects
 const products = [
   {
-    image: "https://via.placeholder.com/150",
+    image: "",
     name: "Elegant Dress",
     desc: "Chic and comfortable, perfect for any occasion.",
     price: "₨7,999"
   },
   {
-    image: "https://via.placeholder.com/150",
+    image: "",
     name: "Smart Watch",
     desc: "Stay connected in style with our latest smartwatch.",
     price: "₨19,999"
   },
   {
-    image: "https://via.placeholder.com/150",
+    image: "",
     name: "Aroma Diffuser",
     desc: "Fill your home with soothing scents and ambience.",
     price: "₨4,499"
