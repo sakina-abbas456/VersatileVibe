@@ -44,7 +44,7 @@ nav a:hover {
 
 main {
   padding: 2rem 1rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -129,6 +129,8 @@ main {
 
 .product-card img {
   width: 100%;
+  height: 180px;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -136,6 +138,7 @@ main {
 .product-card h3 {
   margin: 0.5rem 0;
   color: var(--main);
+  font-size: 1.15rem;
 }
 
 .price {
@@ -143,6 +146,7 @@ main {
   margin-top: 0.7rem;
   font-weight: bold;
   color: var(--main);
+  font-size: 1.1rem;
 }
 
 footer {
@@ -153,4 +157,42 @@ footer {
   padding: 1rem 0;
   font-size: 1rem;
   letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .features,
+  .product-list {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .feature-card,
+  .product-card {
+    width: 90%;
+    min-width: unset;
+    margin: 0 auto;
+  }
+  main {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  .feature-card, .product-card {
+    padding: 1rem;
+  }
+  .product-card img {
+    height: 120px;
+  }
+  nav a {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
 }
