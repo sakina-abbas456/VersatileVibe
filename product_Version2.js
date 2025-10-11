@@ -35,3 +35,30 @@ products.forEach(product => {
   `;
   productList.appendChild(card);
 });
+</script>
+
+<!-- Slideshow ke liye JS -->
+<script>
+function showSlides(slideClass, indexVarName) {
+  let slides = document.getElementsByClassName(slideClass);
+  let slideIndex = window[indexVarName] || 0;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  window[indexVarName] = slideIndex;
+  setTimeout(() => showSlides(slideClass, indexVarName), 2000);
+}
+
+// Har slideshow ke liye alag call
+window.babyIndex = 0;
+showSlides('babySlides', 'babyIndex');
+
+window.babaIndex = 0;
+showSlides('babaSlides', 'babaIndex');
+
+window.expensiveIndex = 0;
+showSlides('expensiveSlides', 'expensiveIndex');
+</script>
